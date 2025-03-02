@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 async function fetchCoords(city, country) {
 
 
-    const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=1&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=1&appid=${apiKey}`;
     
     try {
         const response = await fetch(url);
@@ -81,65 +81,65 @@ async function fetchWeather() {
     
         if(temp>15 && windSpeed<=5) { //if temp is greater than 15 and wind speed is less than 5
             document.getElementById("item1").innerText="Singlet";
-            document.getElementById("clothesImage1").src="/images/singlet.png";
+            document.getElementById("clothesImage1").src="images/singlet.png";
             document.getElementById("item2").innerText="Shorts";
-            document.getElementById("clothesImage2").src="/images/shorts.png";
+            document.getElementById("clothesImage2").src="images/shorts.png";
             document.getElementById("item3").innerText="Sunglasses";
-            document.getElementById("clothesImage3").src="/images/sunglasses.png";
+            document.getElementById("clothesImage3").src="images/sunglasses.png";
             document.getElementById("item4").innerText="Cap";
-            document.getElementById("clothesImage4").src="/images/cap.png";
+            document.getElementById("clothesImage4").src="images/cap.png";
             document.getElementById("item5").innerText="";
             document.getElementById("clothesImage5").src="";
             document.getElementById("item6").innerText="";
             document.getElementById("clothesImage6").src="";
         } else if(temp>15 && wind>5) { //if temp is greater than 15 and wind speed is greater than 5
             document.getElementById("item1").innerText="Singlet";
-            document.getElementById("clothesImage1").src="/images/singlet.png";
+            document.getElementById("clothesImage1").src="images/singlet.png";
             document.getElementById("item2").innerText="Shorts";
-            document.getElementById("clothesImage2").src="/images/shorts.png";
+            document.getElementById("clothesImage2").src="images/shorts.png";
             document.getElementById("item3").innerText="Sunglasses";
-            document.getElementById("clothesImage3").src="/images/sunglasses.png";
+            document.getElementById("clothesImage3").src="images/sunglasses.png";
             document.getElementById("item4").innerText="Cap";
-            document.getElementById("clothesImage4").src="/images/gloves.png";
+            document.getElementById("clothesImage4").src="images/gloves.png";
             document.getElementById("item5").innerText="Arm warmers";
-            document.getElementById("clothesImage5").src="/images/armwarmers.png";
+            document.getElementById("clothesImage5").src="images/armwarmers.png";
             document.getElementById("item6").innerText="";
             document.getElementById("clothesImage6").src="";
 
         } else if((temp<=15 && temp>10) && (windSpeed<=5)) { //if temp is less than or equal to 15 and greater than 10 and wind speed is less than 5
             document.getElementById("item1").innerText="T-shirt";
-            document.getElementById("clothesImage1").src="/images/tshirt.png";
+            document.getElementById("clothesImage1").src="images/tshirt.png";
             document.getElementById("item2").innerText="Shorts";
-            document.getElementById("clothesImage2").src="/images/shorts.png";
+            document.getElementById("clothesImage2").src="images/shorts.png";
             document.getElementById("item3").innerText="Sunglasses";
-            document.getElementById("clothesImage3").src="/images/sunglasses.png";
+            document.getElementById("clothesImage3").src="images/sunglasses.png";
             document.getElementById("item4").innerText="Cap";
-            document.getElementById("clothesImage4").src="/images/cap.png";
+            document.getElementById("clothesImage4").src="images/cap.png";
             document.getElementById("item5").innerText="";
             document.getElementById("clothesImage5").src="";
             document.getElementById("item6").innerText="";
             document.getElementById("clothesImage6").src="";
         } else if((temp<=15 && temp>10) && (windSpeed>5)) {
             document.getElementById("item1").innerText="T-shirt";
-            document.getElementById("clothesImage1").src="/images/tshirt.png";
+            document.getElementById("clothesImage1").src="images/tshirt.png";
             document.getElementById("item2").innerText="Shorts";
-            document.getElementById("clothesImage2").src="/images/shorts.png";
+            document.getElementById("clothesImage2").src="images/shorts.png";
             document.getElementById("item3").innerText="Sunglasses";
-            document.getElementById("clothesImage3").src="/images/sunglasses.png";
+            document.getElementById("clothesImage3").src="images/sunglasses.png";
             document.getElementById("item4").innerText="Cap";
-            document.getElementById("clothesImage4").src="/images/cap.png";
+            document.getElementById("clothesImage4").src="images/cap.png";
             document.getElementById("item5").innerText="Arm warmers";
-            document.getElementById("clothesImage5").src="/images/armwarmers.png";
+            document.getElementById("clothesImage5").src="images/armwarmers.png";
             document.getElementById("item6").innerText="";
             document.getElementById("clothesImage6").src="";
 
         } else if((temp<=10 && temp>5) && (windSpeed<=5)) { //if temp is less than or equal to 10 and greater than 5 and wind speed is less than 5
             document.getElementById("item1").innerText="Long Sleeve";
-            document.getElementById("clothesImage1").src="/images/longsleeve.png";
+            document.getElementById("clothesImage1").src="images/longsleeve.png";
             document.getElementById("item2").innerText="Shorts";
-            document.getElementById("clothesImage2").src="/images/shorts.png";
+            document.getElementById("clothesImage2").src="images/shorts.png";
             document.getElementById("item3").innerText="Cap";
-            document.getElementById("clothesImage3").src="/images/cap.png";
+            document.getElementById("clothesImage3").src="images/cap.png";
             document.getElementById("item4").innerText="";
             document.getElementById("clothesImage4").src="";
             document.getElementById("item5").innerText="";
@@ -148,13 +148,13 @@ async function fetchWeather() {
             document.getElementById("clothesImage6").src="";
         } else if((temp<=10 && temp>5) && (windSpeed>5)) { //if temp is less than or equal to 10 and greater than 5 and wind speed is greater than 5
             document.getElementById("item1").innerText="Long Sleeve";
-            document.getElementById("clothesImage1").src="/images/longsleeve.png";
+            document.getElementById("clothesImage1").src="images/longsleeve.png";
             document.getElementById("item2").innerText="Shorts";
-            document.getElementById("clothesImage2").src="/images/shorts.png";
+            document.getElementById("clothesImage2").src="images/shorts.png";
             document.getElementById("item3").innerText="Jacket";
-            document.getElementById("clothesImage3").src="/images/jacket.png";
+            document.getElementById("clothesImage3").src="images/jacket.png";
             document.getElementById("item4").innerText="Cap";
-            document.getElementById("clothesImage4").src="/images/cap.png";
+            document.getElementById("clothesImage4").src="images/cap.png";
             document.getElementById("item5").innerText="";
             document.getElementById("clothesImage5").src="";
             document.getElementById("item6").innerText="";
@@ -162,71 +162,71 @@ async function fetchWeather() {
 
         } else if((temp<=5 && temp>0) && (windSpeed<=5)) { // if temp is less than or equal to 5 and greater than 0 and wind speed is less than 5
             document.getElementById("item1").innerText="Long Sleeve";
-            document.getElementById("clothesImage1").src="/images/longsleeve.png";
+            document.getElementById("clothesImage1").src="images/longsleeve.png";
             document.getElementById("item2").innerText="Tights";
-            document.getElementById("clothesImage2").src="/images/tights.png";
+            document.getElementById("clothesImage2").src="images/tights.png";
             document.getElementById("item3").innerText="Jacket";
-            document.getElementById("clothesImage3").src="/images/jacket.png";
+            document.getElementById("clothesImage3").src="images/jacket.png";
             document.getElementById("item4").innerText="Beanie";
-            document.getElementById("clothesImage4").src="/images/beanie.png";
+            document.getElementById("clothesImage4").src="images/beanie.png";
             document.getElementById("item5").innerText="";
             document.getElementById("clothesImage5").src="";
             document.getElementById("item6").innerText="";
             document.getElementById("clothesImage6").src="";
         } else if((temp<=5&&temp>0)&&(windSpeed>5)) { // if temp is less than or equal to 5 and greater than 0 and wind speed is greater than 5
             document.getElementById("item1").innerText="Long Sleeve";
-            document.getElementById("clothesImage1").src="/images/longsleeve.png";
+            document.getElementById("clothesImage1").src="images/longsleeve.png";
             document.getElementById("item2").innerText="Tights";
-            document.getElementById("clothesImage2").src="/images/tights.png";
+            document.getElementById("clothesImage2").src="images/tights.png";
             document.getElementById("item3").innerText="Jacket";
-            document.getElementById("clothesImage3").src="/images/jacket.png";
+            document.getElementById("clothesImage3").src="images/jacket.png";
             document.getElementById("item4").innerText="Beanie";
-            document.getElementById("clothesImage4").src="/images/beanie.png";
+            document.getElementById("clothesImage4").src="images/beanie.png";
             document.getElementById("item5").innerText="Gloves";
-            document.getElementById("clothesImage5").src="/images/gloves.png";
+            document.getElementById("clothesImage5").src="images/gloves.png";
             document.getElementById("item6").innerText="";
             document.getElementById("clothesImage6").src="";
 
         } else if((temp<=0&&temp>-5) && (windSpeed<=5)) { // if temp is less than or equal to 0 and greater than -5 and wind speed is less than 5
             document.getElementById("item1").innerText="Long Sleeve";
-            document.getElementById("clothesImage1").src="/images/longsleeve.png";
+            document.getElementById("clothesImage1").src="images/longsleeve.png";
             document.getElementById("item2").innerText="Tights";
-            document.getElementById("clothesImage2").src="/images/tights.png";
+            document.getElementById("clothesImage2").src="images/tights.png";
             document.getElementById("item3").innerText="Jacket";
-            document.getElementById("clothesImage3").src="/images/jacket.png";
+            document.getElementById("clothesImage3").src="images/jacket.png";
             document.getElementById("item4").innerText="Beanie";
-            document.getElementById("clothesImage4").src="/images/beanie.png";
+            document.getElementById("clothesImage4").src="images/beanie.png";
             document.getElementById("item5").innerText="Gloves";
-            document.getElementById("clothesImage5").src="/images/gloves.png";
+            document.getElementById("clothesImage5").src="images/gloves.png";
             document.getElementById("item6").innerText="Snood";
-            document.getElementById("clothesImage6").src="/images/snood.png";
+            document.getElementById("clothesImage6").src="images/snood.png";
         } else if((temp<=0&&temp>-5) && (windSpeed>5)) { // if temp is less than or equal to 0 and greater than -5 and wind speed is greater than 5
             document.getElementById("item1").innerText="Long Sleeve";
-            document.getElementById("clothesImage1").src="/images/longsleeve.png";
+            document.getElementById("clothesImage1").src="images/longsleeve.png";
             document.getElementById("item2").innerText="Tights";
-            document.getElementById("clothesImage2").src="/images/tights.png";
+            document.getElementById("clothesImage2").src="images/tights.png";
             document.getElementById("item3").innerText="Jacket";
-            document.getElementById("clothesImage3").src="/images/jacket.png";
+            document.getElementById("clothesImage3").src="images/jacket.png";
             document.getElementById("item4").innerText="Beanie";
-            document.getElementById("clothesImage4").src="/images/beanie.png";
+            document.getElementById("clothesImage4").src="images/beanie.png";
             document.getElementById("item5").innerText="Gloves";
-            document.getElementById("clothesImage6").src="/images/gloves.png";
+            document.getElementById("clothesImage6").src="images/gloves.png";
             document.getElementById("item6").innerText="Snood";
-            document.getElementById("clothesImage6").src="/images/snood.png";
+            document.getElementById("clothesImage6").src="images/snood.png";
 
         } else if(temp<=-5) { // if temp is less than or equal to -5
             document.getElementById("item1").innerText="Long Sleeve";
-            document.getElementById("clothesImage1").src="/images/longsleeve.png";
+            document.getElementById("clothesImage1").src="images/longsleeve.png";
             document.getElementById("item2").innerText="Tights";
-            document.getElementById("clothesImage2").src="/images/tights.png";
+            document.getElementById("clothesImage2").src="images/tights.png";
             document.getElementById("item3").innerText="Heavy Jacket";
-            document.getElementById("clothesImage3").src="/images/heavyjacket.png";
+            document.getElementById("clothesImage3").src="images/heavyjacket.png";
             document.getElementById("item4").innerText="Beanie";
-            document.getElementById("clothesImage4").src="/images/beanie.png";
+            document.getElementById("clothesImage4").src="images/beanie.png";
             document.getElementById("item5").innerText="Gloves";
-            document.getElementById("clothesImage5").src="/images/gloves.png";
+            document.getElementById("clothesImage5").src="images/gloves.png";
             document.getElementById("item6").innerText="Snood";
-            document.getElementById("clothesImage6").src="/images/snood.png";
+            document.getElementById("clothesImage6").src="images/snood.png";
         }
 
 

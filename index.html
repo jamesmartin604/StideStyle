@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>StrideStyle</title>
+    <link rel="stylesheet" href="style.css"> <!--Link to external css file-->
+    <meta charset="UTF-8"> <!--Ensures proper character encoding-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!--nav bar-->
+    <ul>
+        <li><a>StrideStyle</a></li>        
+    </ul>
+
+    
+        <div class="james">
+            <!--Container for all input elements-->
+            <div id="form-container">
+                <div class="input-group">
+                    <input required="" id="city" type="text" name="text"  class="input">
+                    <label class="user-label">City...</label>
+                </div>
+    
+                <div class="input-group-two">
+                    <input required="" id="country" type="text" name="text"  class="input-two">
+                    <label class="user-label-two">Country...</label>
+                </div>
+                
+                <input type="submit" id="submit" value="Submit"> <!--Submit button to trigger for submission-->
+            </div>
+
+            <!--Container for all weather elements-->
+            <div class="weather-container">
+                <div class="weather-box">
+                    <div class="weather-item-box">
+                        <img src="/images/temp.png"/>
+                        <div id="weather"></div> <!--temperature display-->
+                    </div>
+                    <div class="weather-item-box">
+                        <img src="/images/desc.png"/> <!--weather description display-->
+                        <div id="desc"></div>
+                    </div>
+                    <div class="weather-item-box">
+                        <img src="/images/feelslike.png"/>
+                        <div id="feelslike"></div> <!--feels like temperature-->
+                    </div>
+                    <div class="weather-item-box">
+                        <img src="/images/wind.png"/>
+                        <div id="windspeed"></div> <!--wind speed display-->
+                    </div>
+                    <div class="weather-item-box">
+                        <img src="/images/time.png"/>
+                        <div id="time"></div> <!--time display-->
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+    <p id="conditions">Based on these conditions, you should wear: </p>
+
+
+    <!--Container for all clothing elements-->
+    <div class="parent-container">
+        <div class="grid-container">
+            <!--each item box represents a clothing recommendation-->
+            <div class="item-box">
+                <div id="item1"></div>
+                <img id="clothesImage1"/>
+            </div>
+            <div class="item-box">
+                <div id="item2"></div>
+                <img id="clothesImage2"/>
+            </div>
+            <div class="item-box">
+                <div id="item3"></div>
+                <img id="clothesImage3"/>
+            </div>
+            <div class="item-box">
+                <div id="item4"></div>
+                <img id="clothesImage4"/>
+            </div>
+            <div class="item-box">
+                <div id="item5"></div>
+                <img id="clothesImage5"/>
+            </div>
+            <div class="item-box">
+                <div id="item6"></div>
+                <img id="clothesImage6"/>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer-->
+ 
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text"><span>Stride</span>Style</h1>
+                <p>
+                    StrideStyle helps you choose the perfect outfit based on real-time weather conditions.
+                    Enter your location, get tailored clothing recommendations, and stay comfortable in any climate!
+                </p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &phone; +353851480358</span>
+                    <span><i class="fas fa-envelope"></i> &#9993; jamesmartin604@gmail.com</span>
+                </div>
+            </div>    
+        </div>
+        
+        <div class="footer-bottom">
+            &copy; StrideStyle | Designed by James Martin
+        </div>
+    </div>
+    
+    <script src = "script.js"></script> <!--js file for interactivity-->
+</body>
+</html>

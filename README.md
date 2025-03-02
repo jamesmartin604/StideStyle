@@ -1,4 +1,4 @@
-<img width="942" alt="screenshot1" src="https://github.com/user-attachments/assets/9b996215-5a3a-4f5d-8cb3-8a41c2e17ef3" /># StideStyle - Weather-Based Outfit Recommender
+StideStyle - Weather-Based Outfit Recommender
 
 StrideStyle is a web application that provides personalised clothing recommendations for running based on real-time weather data. Simply enter your city and country, and the app will fetch the latest weather conditions, such as temperature and wind speed, to suggest the best outfit for your run.
 

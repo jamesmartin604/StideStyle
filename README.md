@@ -9,10 +9,10 @@ StrideStyle is a web application that provides personalised clothing recommendat
 - **Fast & Lightweight** - Built with clean HTML, CSS and JavaScript for optimal performance.
 
 ## Technologies Used
--**HTML** - Structure of the web app.
--**CSS** - Styling for a modern and user-friendly interface.
--**JavaScript** - Handles API requests and dynamically updates the UI.
--**OpenWeather API** - Provides real-time weather data.
+- **HTML** – Structure of the web app.
+- **CSS** – Styling for a modern and user-friendly interface.
+- **JavaScript** – Handles API requests and dynamically updates the UI.
+- **OpenWeather API** – Provides real-time weather data.
 
 ## How to Use
 1. Enter a city and country in the input fields.
